@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>:: 차혁흔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.1/github-markdown.min.css">
+</head>
+<body>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.4/showdown.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '', // FIXME: md file url
+            success: function (data) {
+                document.body.innerHTML = new showdown.Converter().makeHtml(data);
+            }
+        });
+    });
+</script>
+</html>
